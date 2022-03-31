@@ -42,24 +42,24 @@ let datosAnimales = (() => {
             })();
 
             if (animalName === "Leon") {
-                let newLeon = new Leon(animalName, animalAge, datos.animales[0].imagen, animalComments, datos.animales[0].sonido)
+                let newLeon = new Leon(animalName, animalAge, todoslosdatos[0].imagen, animalComments, todoslosdatos[0].sonido)
                 console.log(newLeon);
 
             } else if (animalName === "Lobo") {
-                let newLobo = new Lobo(animalName, animalAge, datos.animales[1].imagen, animalComments, datos.animales[1].sonido)
+                let newLobo = new Lobo(animalName, animalAge, todoslosdatos[1].imagen, animalComments, todoslosdatos[1].sonido)
                 console.log(newLobo);
                 
 
             } else if (animalName === "Oso") {
-                let newOso = new Oso(animalName, animalAge, datos.animales[2].imagen, animalComments, datos.animales[2].sonido)
+                let newOso = new Oso(animalName, animalAge, todoslosdatos[2].imagen, animalComments, todoslosdatos[2].sonido)
                 console.log(newOso);
 
             } else if (animalName === "Serpiente") {
-                let newSerpiente = new Serpiente(animalName, animalAge, datos.animales[3].imagen, animalComments, datos.animales[3].sonido)
+                let newSerpiente = new Serpiente(animalName, animalAge, todoslosdatos[3].imagen, animalComments, todoslosdatos[3].sonido)
                 console.log(newSerpiente)
 
             } else if (animalName === "Aguila") {
-                let newAguila = new Aguila(animalName, animalAge, datos.animales[4].imagen, animalComments, datos.animales[4].sonido)
+                let newAguila = new Aguila(animalName, animalAge, todoslosdatos[4].imagen, animalComments, todoslosdatos[4].sonido)
                 console.log(newAguila)
             }
 
@@ -72,7 +72,8 @@ let datosAnimales = (() => {
             document.getElementById("animal").value = "";
             document.getElementById("edad").value = "";
             document.getElementById("comentarios").value = "";
-            document.getElementById("preview").innerHTML = "";
+            document.getElementById("preview") = "";
+
         }
     }
     return request(urlbase)
