@@ -34,12 +34,14 @@ let datosAnimales = (() => {
                         animalBox.innerHTML += `<div class='card w-25 h-50' style='width: 18rem;'>
                                     <img src='assets/imgs/${a.imagen}' class='card-img-top h-75' style='object-fit: cover;'>
                                 <div class='card-body bg-secondary h-25 p-0 d-flex align-content-center justify-content-center'>
-                                    <img class='audio audio${a.name}' type='button' src='assets/imgs/audio.svg' class='w-25'>
+                                    <img class='audio' type='button' src='assets/imgs/audio.svg' class='w-25'>
                                 </div>
                             </div>`;
                     }
                 })
             })();
+
+            // condicionales para crear las instancias
 
             if (animalName === "Leon") {
                 let newLeon = new Leon(animalName, animalAge, todoslosdatos[0].imagen, animalComments, todoslosdatos[0].sonido)
