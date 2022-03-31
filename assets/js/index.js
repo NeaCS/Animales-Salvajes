@@ -74,7 +74,7 @@ let datosAnimales = (() => {
             document.getElementById("animal").value = "";
             document.getElementById("edad").value = "";
             document.getElementById("comentarios").value = "";
-            document.getElementById("preview") = "";
+
 
         }
     }
